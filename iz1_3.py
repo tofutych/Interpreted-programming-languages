@@ -1,25 +1,52 @@
-from itertools import permutations
-
-
-def is_palindrome(word):
-    return word == word[::-1]
+def is_eng(char):
+    return 64 < ord(char) < 91 or 94 < ord(char) < 123
 
 
 letter = None
-word = list()
-while letter != '.':
+word = []
+
+while True:
     letter = input('Введите латинскую букву: ')
-    word.append(letter)
-word.remove('.')
-
-words = list(map(lambda x: ''.join(x), list(permutations(word))))
-words.sort()
-
-flag = False
-for word in words:
-    if is_palindrome(word):
-        flag = True
-        print(f'Да\n{word}')
+    if len(letter) == 1 and is_eng(letter):
+        word.append(letter)
+    elif letter == '.':
         break
-if not flag:
-    print('Нет\n')
+    else:
+        print('Ошибка! Нужно вводить только букву латникого алфавита')
+
+flag = True
+palindrome = ''
+d = {}
+for letter in set(word):
+    d[letter] = word.count(letter)
+
+if len(word) % 2 == 0:
+    for letter in set(word):
+        d[letter] = word.count(letter)
+        if word.count(letter) % 2 != 0:
+            flag = False
+    if flag:
+        for letter in sorted(list(d.keys())):
+            palindrome += letter * (d[letter] // 2)
+        palindrome += palindrome[::-1]
+else:
+    counter = 0
+    for item in d.keys():
+        if d[item] > 1 and d[item] % 2 != 0:
+            flag = False
+        elif d[item] == 1:
+            counter += 1
+    if counter > 1:
+        flag = False
+    if flag:
+        for letter in sorted(list(d.keys())):
+            if d[letter] % 2 == 0:
+                palindrome += letter * (d[letter] // 2)
+            if d[letter] == 1:
+                mid_char = letter
+        palindrome += mid_char + palindrome[::-1]
+
+if palindrome:
+    print(f'Да\n{palindrome}')
+else:
+    print('Нет')
