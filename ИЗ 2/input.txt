@@ -1,0 +1,11 @@
+Adin cat 1
+Ivanov paper 10
+Ruchkin marker 1
+Ruchkin lopata 666
+Petrov pen 5
+Ivanov marker 3
+Ivanov paper 7
+Petrov envelope 20
+Ivanov envelope 5
+Ruchkin paper 10
+Adin cat 1

@@ -1,0 +1,13 @@
+Adin:
+cat 2
+Ivanov:
+paper 17
+marker 3
+envelope 5
+Petrov:
+pen 5
+envelope 20
+Ruchkin:
+marker 1
+lopata 666
+paper 10
