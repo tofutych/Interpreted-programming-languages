@@ -36,18 +36,18 @@
 
 Результат
 
-     input.txt                                                                            output.txt                  
+     input.txt                                                          output.txt                  
 
-     Adin cat 1                                                                           Adin:
-     Ivanov paper 10                                                                      cat 2
-     Ruchkin marker 1                                                                     Ivanov:
-     Ruchkin lopata 666                                                                   paper 17
-     Petrov pen 5                                                                         marker 3
-     Ivanov marker 3                                                                      envelope 5
-     Ivanov paper 7                                                                       Petrov:
-     Petrov envelope 20                                                                   pen 5
-     Ivanov envelope 5                                                                    envelope 20
-     Ruchkin paper 10                                                                     Ruchkin:
-     Adin cat 1                                                                           marker 1
-                                                                                          lopata 666
-                                                                                          paper 10
+     Adin cat 1                                                                     Adin:
+     Ivanov paper 10                                                                cat 2
+     Ruchkin marker 1                                                               Ivanov:
+     Ruchkin lopata 666                                                             paper 17
+     Petrov pen 5                                                                   marker 3
+     Ivanov marker 3                                                                envelope 5
+     Ivanov paper 7                                                                 Petrov:
+     Petrov envelope 20                                                             pen 5
+     Ivanov envelope 5                                                              envelope 20
+     Ruchkin paper 10                                                               Ruchkin:
+     Adin cat 1                                                                     marker 1
+                                                                                    lopata 666
+                                                                                    paper 10
