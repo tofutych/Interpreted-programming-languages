@@ -8,7 +8,6 @@ def make_buyers_db():
 
 
 def make_customers_db():
-    global data
     data = sorted(make_buyers_db(), key=lambda elem: elem[0])
     customers = dict()
     for elem in data:
